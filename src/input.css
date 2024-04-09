@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --menu-height:10rem;
+}
+
+.section-height {
+    height: calc(100vh - var(--menu-height));
+}
+
+.menu-height {
+    height: var(--menu-height);
+}
+
+.image-max-height {
+    max-height: calc(90vh - var(--menu-height));
+}
