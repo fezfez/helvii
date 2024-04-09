@@ -16,7 +16,7 @@
 }
 
 .image-max-height {
-    max-height: calc(90vh - var(--menu-height));
+    max-height: calc(80vh - var(--menu-height));
 }
 
 .top-menu {
