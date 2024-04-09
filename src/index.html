@@ -6,86 +6,19 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-<!--
-<main class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
-    <section class="w-full h-screen bg-red-200  snap-start">Section 1</section>
-    <section class="w-full h-screen bg-blue-200 snap-start">Section 2</section>
-    <section class="w-full h-screen bg-green-200 snap-start">Section 3</section>
-    <section class="w-full h-screen bg-indigo-200 snap-start">Section 4</section>
-    <section class="w-full h-screen bg-yellow-200 snap-start">Section 5</section>
-</main>
--->
-<!--
-<main class="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
-    <section class="snap-always snap-center" style="background-color:#121622;">
-        <div class="relative min-h-screen bg-no-repeat bg-contain bg-center">
-            <div class="col-span-3 grid" style="background-color: #ECEBE7;">
-                <img src="./img/orgmios/3.jpg" class="object-contain h-48 w-96 justify-self-center">
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-1">
-                <div class="col-span-3">
-                    <h2 class="text-white">Black Indian Pale Ale</h2>
-                    <p class="text-white">un mélange entre une stout robuste et une bière aux arômes torréfiées qui se fondent avec les arômes exotiques des houblons soigneusement sélectionnés</p>
-                </div>
-                <div class="col-span-2">
-                    <img src="./img/orgmios/2.jpg"/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="snap-always snap-center">
-        <div class="relative min-h-screen flex">Section 2</div>
-    </section>
-</main>
-
-<main class="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
-    <section class="snap-always snap-center" style="background-color:#121622;">
-        <div class="relative min-h-screen bg-no-repeat bg-contain bg-center">
-            <div class="col-span-3 grid" style="background-color: #ECEBE7;">
-                <img src="./img/orgmios/3.jpg" class="object-contain h-48 w-96 justify-self-center">
-            </div>
-            <div class="bg-contain items-center justify-center  bg-no-repeat bg-right" style="background-image: url('./img/orgmios/2.jpg');height:500px;">
-                <h2 class="text-white">Black Indian Pale Ale</h2>
-                <p class="text-white">un mélange entre une stout robuste et une bière aux arômes torréfiées qui se fondent avec les arômes exotiques des houblons soigneusement sélectionnés</p>
-            </div>
-        </div>
-    </section>
-    <section class="snap-always snap-center">
-        <div class="relative min-h-screen flex">Section 2</div>
-    </section>
-</main>
--->
-<!--
-<div class="">
-    <div class="fixed"><a href="#ogmios">Ogmios</a><a href="#lug">lug</a></div>
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white" id="ogmios">
-        <img src="./img/orgmios/2-removebg.png" >
-        <h2 class="text-4xl text-white">Ogmios</h2>
-        <p>Scroll Down</p>
+<header class="menu-height sticky top-0 bg-red-200">
+    <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+        <img src="./img/logo-removebg.png" alt="logo Helvii" style="background-color: white;border-radius: 50%;" class="size-20" />
+        <h1>Brasserie l'Helvii</h1>
+        <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#one">One</a></li>
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#two">Two</a></li>
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#three">Three</a></li>
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center text-white bg-no-repeat" style="background-image: url('./img/lug/2.jpg')" id="lug">
-        <h2 class="text-4xl">The Second Title</h2>
-        <p>Scroll Down</p>
-    </div>
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white">
-        <h2 class="text-4xl">The Third Title</h2>
-        <p>Scroll Down</p>
-    </div>
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-neutral-800 text-white">
-        <h2 class="text-4xl">The Fourth Title</h2>
-    </div>
-</div>-->
-
-<div class="menu-height sticky top-0 bg-red-200">
-    Brasserie l'Helvii
-    <img src="./img/logo-removebg.png" alt="logo Helvii" style="background-color: white;border-radius: 50%;" class="size-20" />
-    <a href="#one">One</a>
-    <a href="#two">Two</a>
-    <a href="#three">Three</a>
-</div>
-<div class="submenu-height sticky top-menu bg-yellow-200">
-Yooo
-</div>
+</header>
 <div class="snap-y snap-mandatory overflow-y-scroll section-height scroll-smooth">
     <section class="section-height snap-start bg-blue-200" id="one">
         <h2>Ogmios</h2>
@@ -105,12 +38,7 @@ Yooo
     <section class="section-height snap-start bg-neutral-800" id="three">
         <h1>Section Three</h1>
     </section>
-</div>
-<div class="submenu-height sticky bg-purple-600 subtop-menu">
-    yeahhh
-</div>
-<div>
-    <section class="section-height" id="contact">
+    <section class="section-height snap-start bg-neutral-800" id="contact">
         <h2>contact</h2>
     </section>
 </div>

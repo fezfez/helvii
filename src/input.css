@@ -4,8 +4,7 @@
 
 
 :root {
-    --menu-height:10rem;
-    --submenu-height:3rem;
+    --menu-height:6rem;
 }
 
 .section-height {
@@ -16,18 +15,10 @@
     height: var(--menu-height);
 }
 
-.submenu-height {
-    height: var(--submenu-height);
-}
-
 .image-max-height {
-    max-height: calc(90vh - var(--menu-height) - var(--submenu-height));
+    max-height: calc(90vh - var(--menu-height));
 }
 
 .top-menu {
     top:var(--menu-height);
-}
-
-.subtop-menu {
-    top:calc(var(--menu-height) + var(--submenu-height));
 }
