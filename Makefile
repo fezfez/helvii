@@ -11,8 +11,8 @@ eslint:
 eslintfix:
 	docker-compose run node npx eslint src/ --fix
 
-toto:
-	docker-compose run node npm run tototo
+watch:
+	docker-compose run node npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
 
 chown:
