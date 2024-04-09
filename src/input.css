@@ -4,7 +4,7 @@
 
 
 :root {
-    --menu-height:6rem;
+    --menu-height:4rem;
 }
 
 .section-height {
@@ -22,3 +22,9 @@
 .top-menu {
     top:var(--menu-height);
 }
+
+/*
+ top #080811
+ mid #121523
+
+ */
