@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
 </head>
 <body>
 <header class="menu-height sticky top-0 bg-red-200">
     <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
-        <img src="./img/logo-removebg.png" alt="logo Helvii" style="background-color: white;border-radius: 50%;" class="size-20" />
-        <h1>Brasserie l'Helvii</h1>
+        <a href="./" class="flex justify-between items-center space-x-4">
+            <img src="./img/logo-removebg.png" alt="logo Helvii" style="background-color: white;border-radius: 50%;" class="size-20" />
+            <h1>Brasserie l'Helvii</h1>
+        </a>
         <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
                 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
-            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#one">One</a></li>
-            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#two">Two</a></li>
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#Ogmios">Ogmios</a></li>
+            <li><a class="opacity-70 hover:opacity-100 duration-300" href="#Lug">Lug</a></li>
             <li><a class="opacity-70 hover:opacity-100 duration-300" href="#three">Three</a></li>
             <li><a class="opacity-70 hover:opacity-100 duration-300" href="#contact">Contact</a></li>
         </ul>
     </div>
 </header>
 <div class="snap-y snap-mandatory overflow-y-scroll section-height scroll-smooth">
-    <section class="section-height snap-start bg-blue-200" id="one">
+    <section class="section-height snap-start bg-blue-200" id="Ogmios">
         <h2>Ogmios</h2>
         <ul>
             <li>Black Indian Pale Ale</li>
         </ul>
         <p>mélange entre une stout robuste et une bière aux arômes torréfiées qui se fondent avec les arômes exotiques des houblons soigneusement sélectionnés.</p>
-        <img src="./img/orgmios/2-removebg.png" class="image-max-height" >
+        <img src="./img/orgmios/2-removebg.png" class="image-max-height intersect:animate-fade-left animate-duration-[5000ms]" >
     </section>
-    <section class="section-height snap-start bg-green-200" id="two">
+    <section class="section-height snap-start bg-green-200" id="Lug">
         <h1>Lug</h1>
         <ul>
             <li>Double rousse IPA</li>
         </ul>
-        <img src="./img/lug/2-removebg.png" class="image-max-height">
+        <img src="./img/lug/2-removebg.png" class="image-max-height intersect:animate-fade-right animate-duration-[5000ms]">
     </section>
     <section class="section-height snap-start bg-neutral-800" id="three">
         <h1>Section Three</h1>

@@ -650,6 +650,12 @@ video {
   justify-content: space-between;
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -706,6 +712,38 @@ video {
   transition-duration: 300ms;
 }
 
+.animate-normal {
+  animation-direction: normal;
+}
+
+.animate-duration-1000 {
+  animation-duration: 1000ms;
+}
+
+.animate-duration-\[3000ms\] {
+  animation-duration: 3000ms;
+}
+
+.animate-duration-\[4000ms\] {
+  animation-duration: 4000ms;
+}
+
+.animate-duration-\[5000ms\] {
+  animation-duration: 5000ms;
+}
+
+.animate-fill-both {
+  animation-fill-mode: both;
+}
+
+.animate-once {
+  animation-iteration-count: 1;
+}
+
+.animate-ease-in-out {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 :root {
   --menu-height:6rem;
 }
@@ -728,6 +766,74 @@ video {
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.intersect\:animate-fade-right:not([no-intersect]) {
+  animation: fade-right 1s both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intersect\:animate-fade-up:not([no-intersect]) {
+  animation: fade-up 1s both;
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.intersect\:animate-fade-left:not([no-intersect]) {
+  animation: fade-left 1s both;
+}
+
+.intersect\:animate-normal:not([no-intersect]) {
+  animation-direction: normal;
+}
+
+.intersect\:animate-fill-both:not([no-intersect]) {
+  animation-fill-mode: both;
+}
+
+.intersect\:animate-once:not([no-intersect]) {
+  animation-iteration-count: 1;
+}
+
+.intersect\:animate-run:not([no-intersect]) {
+  animation-play-state: running;
+}
+
+.intersect\:animate-ease-in-out:not([no-intersect]) {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 768px) {
